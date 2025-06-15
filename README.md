@@ -11,19 +11,21 @@ A Streamlit-based interactive web app to help:
 ```bash
 ├── app.py                     # Streamlit app
 ├── requirements.txt           # Dependencies
-├── README.md                  # Documentation
+├── README.md   
+|__ ALL FILES CREATED FOR UI DISPLAY.        # Documents
 ├── data/                      # Raw and cleaned data
 │   ├── listings.csv
 │   └── IncomeHouseholdMedian.xlsx
 ├── outputs/                   # SHAP plots, model outputs
-│   ├── shap_summary_bar.png
-│   └── shap_summary_full.png
+│   ├── shap_summary_bar.png   # in next version
+│   └── shap_summary_full.png  # in next version
 └── scripts/                   # Modular logic
     ├── data.py
     ├── features.py
     ├── model.py
     ├── recommend.py
     ├── equity.py
+
 ```
 
 ---
@@ -32,8 +34,8 @@ A Streamlit-based interactive web app to help:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/airbnb-equity-dashboard.git
-cd airbnb-equity-dashboard
+git clone https://github.com/tyb01/airbnb-equity-analyzer
+cd airbnb-equity-analyzer
 ```
 
 ### 2. Create a Virtual Environment
@@ -54,35 +56,35 @@ streamlit run app.py
 
 ---
 
-## 🧠 Core Features
+##  Core Features
 
-### 🔍 Introduction
+###  Introduction
 Overview of the project goals and societal impact.
 
-### 📊 EDA
+###  EDA
 Basic visualizations to explore price trends, room types, and distributions.
 
-### 📈 Model
+###  Model
 Train and evaluate a Random Forest regressor to predict listing prices.
 Detect undervalued listings.
 
-### 🧳 Traveler Mode
+###  Traveler Mode
 - Filter listings by price, review score, and ZIP equity.
 - View high-value listings in underserved areas.
 
-### 🧑‍💼 Host Mode
+###  Host Mode
 - Input listing attributes to get predicted price.
 - View suggestions for amenity or room-type upgrades.
 
-### 🌍 Communities Mode
+###  Communities Mode
 - Score ZIP codes based on income, price, and quality.
 - Identify equitable tourism zones.
 
 ---
 
-## 📦 Data Sources
+##  Data Sources
 - `listings.csv`: Airbnb listing data.
-- `IncomeHouseholdMedian.xlsx`: Census-level ZIP code median incomes.
+- `IncomeHouseholdMedian.xlsx`:ZIP code median incomes.
 
 ---
 
